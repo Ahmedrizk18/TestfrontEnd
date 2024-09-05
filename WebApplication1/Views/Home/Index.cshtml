@@ -1,0 +1,107 @@
+﻿@{
+	ViewData["Title"] = "Home Page";
+}
+<h>HomeTest</h>
+
+<div class="container mt-5">
+	<div class="accordion" id="BaseAccordion">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headerOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Container 1
+				</button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headerOne" data-bs-parent="#BaseAccordion">
+				<div id="container1" class="container-fluid">
+					<div class="row">
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum11" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum12" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum13" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum14" value="Total = 0" disabled>
+						</div>
+					</div>
+					<button class="btn btn-primary mt-3" onclick="AddRow('container1')">Add Row</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headerTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Container 2
+				</button>
+			</h2>
+			<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headerTwo" data-bs-parent="#BaseAccordion">
+				<div id="container2" class="container-fluid">
+					<div class="row">
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum21" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum22" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum23" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum24" value="Total = 0" disabled>
+						</div>
+					</div>
+					<button class="btn btn-primary mt-3" onclick="AddRow('container2')">Add Row</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headerThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Container 3
+				</button>
+			</h2>
+			<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headerThree" data-bs-parent="#BaseAccordion">
+				<div id="container3" class="container-fluid">
+					<div class="row">
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum31" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum32" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-primary text-white" id="sum33" value="sum = 0" disabled>
+						</div>
+						<div class="col p-3">
+							<input type="text" class="form-control bg-dark text-white" id="sum34" value="Total = 0" disabled>
+						</div>
+					</div>
+					<button class="btn btn-primary mt-3" onclick="AddRow('container3')">Add Row</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mt-5">
+	<div class="row">
+		<div class="col p-3">
+			<input type="text" class="form-control bg-primary text-white" id="totalSum1" value="sum = 0" disabled>
+		</div>
+		<div class="col p-3">
+			<input type="text" class="form-control bg-dark text-white" id="totalSum2" value="sum = 0" disabled>
+		</div>
+		<div class="col p-3">
+			<input type="text" class="form-control bg-primary text-white" id="totalSum3" value="sum = 0" disabled>
+		</div>
+		<div class="col p-3">
+			<input type="text" class="form-control bg-dark text-white" id="totalSum4" value="Total = 0" disabled>
+		</div>
+	</div>
+</div>
+<script src="~/js/site.js"></script>
